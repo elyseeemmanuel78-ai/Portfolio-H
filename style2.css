@@ -441,3 +441,35 @@ body {
     /* Optionnel : si la flèche dépasse, on cache ce qui sort */
     overflow: hidden; 
 }
+/* Ajoute ceci à la fin de ton fichier CSS */
+
+.info-item i {
+    color: var(--primary);
+    font-size: 1.2rem;
+    min-width: 25px; /* Aligne les textes si les icônes ont des largeurs différentes */
+}
+
+.social-link {
+    text-decoration: none;
+    color: inherit; /* Garde la couleur de texte du parent */
+    display: flex;
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(0, 212, 255, 0.1); /* Un fond légèrement bleuté au survol */
+    color: var(--primary);
+}
+/* Pour s'assurer que les icônes s'affichent en bleu néon */
+.info-item i {
+    color: var(--primary);
+    text-shadow: var(--neon-glow);
+    font-size: 1.2rem;
+    width: 30px; /* Aligne les icônes proprement */
+}
+
+/* Enlever le soulignement bleu par défaut des liens */
+.social-link {
+    text-decoration: none;
+    color: var(--text-light); /* Garde le texte blanc/bleu très clair */
+}  
